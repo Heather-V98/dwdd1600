@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gameboy's 101: Home</title>
+        <meta name="Author" content="Heather Vernon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Learn about Gameboys">
+        <link rel="stylesheet" href="gboy&pocket.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Gameboy's 101</h1>
+            <h2> Everything you would like to know about Gameboy's. Join us as we explore the models that were manufactured.</h2>
+            
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Gameboy</a></li>
+                <li><a href="site1.html">Gameboy Pocket</a></li>
+                <li class="active"><a href="form.html">Send in your Gameboy</a></li>
+                <li><a href="images.html">Images</a></li>
+            </ul>
+        </nav>
+        
+        
+        <main>
+            <h2>Send in your Gameboy</h2>
+            <p>If your Gameboy needs repairs, send it to us.</p>
+            
+            <form method="get" class="myForm" action="thanks.html">
+            
+            <fieldset>
+            <legend>Customer Information</legend>
+            <label>First Name<input type="text" name="fname" required></label>
+            <label>Last Name<input type="text" name="lname" required></label>
+            <label>Phone Number<input type="tel" name="phone" required></label>
+            <label>Email<input type="email" name="email" required></label>
+            </fieldset>
+                
+            <fieldset>
+            <legend>Please Select the Model You Will be Sending Us</legend>    
+            <label><input type="radio" name="model" value="gameboy">Gameboy</label>
+            <label><input type="radio" name="model" value="pocket">Gameboy: Pocket</label>
+            <label><input type="radio" name="model" value="color">Gameboy: Color</label>
+            <label><input type="radio" name="model" value="advance">Gameboy: Advance</label>
+            <label><input type="radio" name="model" value="advancesp">Gameboy: Advance SP</label>
+            <label><input type="radio" name="model" value="micro">Gameboy: Micro</label>   
+            </fieldset>
+                
+            <fieldset>
+            <legend>What is the Problem With Your Console?</legend>
+                <label><input type="checkbox" name="wontturnon" value="chosen">Wont Power On</label>
+                <label><input type="checkbox" name="screenburn" value="chosen">Screen Burn</label>
+                <label><input type="checkbox" name="speaker" value="chosen">Broken Speaker</label>
+                <label><input type="checkbox" name="steppedon" value="chosen">I Stepped On It</label>
+            </fieldset>
+                
+            <fieldset>
+            <legend>Do You Want Your Gameboy Modded?</legend>
+                <select name="mod">
+                <option value="none">Please Select</option>
+                <option value="screen">Bakclit LCD Screen</option>
+                <option value="battery">USB C Charging</option>
+                <option value="shell">New Shell</option>
+                <option value="buttons">New Buttons</option>
+                </select>  
+            </fieldset>
+                
+            <label>Comments
+                <textarea name="comments">Anything else you want us to know</textarea>
+            </label>
+                
+                
+                
+            <input type="submit" value="Send Repair Form">
+            </form>
+      
+        </main>
+        <footer>
+            <p>&copy; 2024 &bull; Heather Vernon &bull;</p> <address> <a href="mailto:heather.brierley98@mgail.com"> Email Us</a> &bull; <a href="8015920471"> Call Us</a> </address>
+        </footer>
+    </body>
+</html>
