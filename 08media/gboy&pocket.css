@@ -1,0 +1,261 @@
+
+* {box-sizing: border-box;}
+
+body{
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+    margin: 0;
+}
+
+/* Headers */
+header {
+    display: flex;
+}
+
+header h1  {
+    background-color: #f2cc0f;
+    padding: 1rem 2vw;
+    color: #675abf;
+    margin: 0;
+}
+
+header h2  {
+    color: #675abf;
+    padding: 1rem 2vw;
+    margin: 0;
+}
+
+
+/* Navigation */
+/* small screens */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2%;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        border-bottom: solid 1px #f2059f;
+        color: #675abf;
+    }
+    nav .active a {
+        background-color: #675abf;
+        background-image: linear-gradient(to bottom, #675abf, #3d3285);
+        color: white;
+    }    
+} /*end of the media query*/
+
+/*Big screens*/
+@media only screen and (min-width: 801px) {
+    nav{
+    background-color: #f2e313;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+    padding: .85rem 2rem;
+}
+nav li.active a {
+    background-color: #675abf;
+    color: #f2e313;
+}
+nav a:hover {
+    color: #f2059f;
+}
+} /*end of the media query*/
+
+
+/* Main */
+main {
+    padding: 1rem 2vw;
+}
+
+main h2 {
+    color: #f2059f;
+    margin-bottom: .2rem;
+}
+
+main p {
+    margin: 0 0 .3rem 0;
+}
+
+main ul {
+    padding: .5rem 3vw;
+    background-color: #f2e313;
+    list-style-type: circle;
+    width: 13.2rem;
+    border: 1px solid #675abf;
+    border-radius: 5px;
+}
+
+main ul li {
+    margin-bottom: .5rem;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #f2e313; 
+    width: 12.5rem;
+    border: 1px solid #675abf;
+    border-radius: 5px;
+}
+
+main ol li {
+    margin-bottom: .5rem;
+}
+
+main dl dt {
+    color: #675abf;
+    font-weight: 600;
+}
+
+main dl dd {
+    font-size: .9rem;
+}
+
+main a {
+    color: #f2059f;
+}
+
+main a:hover {
+    color: #f20505;
+}
+
+figure.wrapped {
+    width: 30%;
+    margin: 2% 0 0 2%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px #675abf;
+}
+
+.gameboypocket {
+    width: 100%;
+    margin: 0;
+}
+
+.gameboypocket img {
+    width: 100%;
+    height: auto;
+}
+
+/* form */
+.myForm fieldset {
+    border: 1px solid #675abf;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #675abf;
+    font-size: .9rem;
+}
+
+.myForm label {
+    margin: .3rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
+    display: block;
+}
+
+.myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm textarea {
+    border: solid 1px;
+    padding: .3rem;
+    width: 250px;
+    border-radius: 3px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(242, 227, 19, .1);
+}
+
+.myForm [type=submit] {
+    background-color: #675abf;
+    border: none;
+    padding: 1rem 2rem; 
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+.myForm textarea {
+    background-color: rgba(242, 227, 19, .1);
+}
+
+table.color-table {
+    width:100%;
+    border-collapse: collapse;
+}
+table.color-table th {
+    background-color: #f2e313;
+    color: #f2059f;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+table.color-table td {
+    color: #675abf;
+    padding: .4rem 2vw;
+}
+table.color-table tr:nth-child(odd) {
+    background-color: #f2e31320;
+}
+table.color-table tr:hover {
+    background-color: #f2cc0f30;
+}
+
+
+
+
+
+/* footer */
+footer {
+    background-color: #f2cc0f;
+    text-align: center;
+    clear:both;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
